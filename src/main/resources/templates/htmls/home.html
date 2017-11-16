@@ -2,9 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Make Your TODOList</title>
 </head>
 <body>
+<div>
+    <h1>Stwórz swoją TODO listę!</h1>
+    <div id="formular">
+        <form action="/add" method="get">
+            <label>Nazwa zadania:</label>
+            <input type="text" name="nameToDo">
+            <br>
+            <label>Opis:</label>
+            <textarea name="todo"></textarea>
+            <br>
+            <label>Status:</label>
+            <br>
+            <select>
+                <option value="Zrobione">Zrobione</option>
+                <option value="Do zrobienia">Do zrobienia</option>
+                <option value="W trakcie...">W trakcie...</option>
+            </select>
+            <br>
+            <input type="submit" value="GOTOWE!">
+        </form>
+    </div>
+</div>
 
 </body>
 </html>
