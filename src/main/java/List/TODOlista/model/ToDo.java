@@ -11,7 +11,7 @@ public class ToDo {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
-    private String name;
+    private String nameToDo;
     private String todo;
     private String status;
 
@@ -23,12 +23,12 @@ public class ToDo {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getNameToDo() {
+        return nameToDo;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNameToDo(String nameToDo) {
+        this.nameToDo = nameToDo;
     }
 
     public String getTodo() {

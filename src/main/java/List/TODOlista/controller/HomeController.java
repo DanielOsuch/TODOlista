@@ -17,11 +17,12 @@ public class HomeController {
     private ToDoRepository toDoRepository;
 
     @GetMapping("/")
-    public @ResponseBody
-    String addToDoList(@RequestParam String name, @RequestParam String todo, @RequestParam String status) {
+    public String addToDoList(@RequestParam String nameToDo, @RequestParam String todo, @RequestParam String status) {
         ToDo toDo = new ToDo();
-
-
+        toDo.setNameToDo(nameToDo);
+        toDo.setTodo(todo);
+        toDo.setStatus(status);
+        toDoRepository.save(toDo);
         return "home";
     }
 }
