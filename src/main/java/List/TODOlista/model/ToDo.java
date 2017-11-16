@@ -12,9 +12,7 @@ public class ToDo {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private String name;
-
     private String todo;
-
     private String status;
 
 
