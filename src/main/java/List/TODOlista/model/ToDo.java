@@ -15,6 +15,15 @@ public class ToDo {
     private String todo;
     private String status;
 
+    public ToDo(String nameToDo, String todo, String status) {
+        this.nameToDo = nameToDo;
+        this.todo = todo;
+        this.status = status;
+    }
+
+    public ToDo() {
+    }
+
     public Integer getId() {
         return id;
     }

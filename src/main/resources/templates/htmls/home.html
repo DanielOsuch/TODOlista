@@ -5,7 +5,7 @@
     <title>Make Your TODOList</title>
 </head>
 <body>
-<div>
+<!--<div>
     <h1>Stwórz swoją TODO listę!</h1>
     <div id="formular">
         <form action="/add" method="get">
@@ -27,6 +27,15 @@
         </form>
     </div>
 </div>
+-->
+<h2>Dodaj zadanie</h2>
+
+<form action="/" method="post">
+    <input type="text" name="nameToDo" autofocus required placeholder="Nazwa tego czegos">
+    <input type="text" name="todo" required placeholder="Opis...">
+    <input type="text" name="status" placeholder="Opis...">
+    <input type="submit" value="Dodaj">
+</form>
 
 </body>
 </html>
